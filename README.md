@@ -21,6 +21,7 @@ Pre-complied binaries for following platforms are available in [Releases page](h
 - Connect over a UNIX socket (`-s`/`--unixsocket`, `RMATE_UNIXSOCKET`, or `unixsocket` in rmate.rc; default `~/.rmate.socket`). The socket takes precedence over host/port if the file exists. Forward it with SSH using `RemoteForward /path/to/.rmate.socket localhost:52698`: other users on a shared server cannot connect to the socket, as they can to a TCP port.
 - Create backups of local files to avoid corrupting your files if any io/network operations go wrong.
 - Verbose logging of operation (use `-v` one or more times).
+- Open a file that does not exist yet as an empty buffer; the file is created when you first save it. Use `-c`/`--create` to create it when opening.
 
 ### Demo
 [![the screencat](https://asciinema.org/a/fqgvpm9yPdDFAZ11f8uY1DF26.svg)](https://asciinema.org/a/fqgvpm9yPdDFAZ11f8uY1DF26).
